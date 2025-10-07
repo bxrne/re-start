@@ -4,7 +4,6 @@
     import Links from './lib/components/Links.svelte'
     import Settings from './lib/components/Settings.svelte'
     import Stats from './lib/components/Stats.svelte'
-    import Todoist from './lib/components/Todoist.svelte'
     import Weather from './lib/components/Weather.svelte'
 
     let showSettings = $state(false)
@@ -20,10 +19,8 @@
             <Clock />
             <Stats />
         </div>
-        <div class="widgets">
+
             <Weather />
-            <Todoist />
-        </div>
         <Links />
     </div>
 
@@ -45,15 +42,14 @@
         min-height: 100vh;
         justify-content: center;
         align-items: center;
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
     }
     .container {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
     }
-    .top,
-    .widgets {
+    .top {
         display: flex;
         gap: 1.5rem;
     }

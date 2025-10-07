@@ -101,14 +101,6 @@
                 </div>
             </div>
             <div class="group">
-                <label for="todoist-token">todoist api token</label>
-                <input
-                    id="todoist-token"
-                    type="password"
-                    bind:value={settings.todoistApiToken}
-                />
-            </div>
-            <div class="group">
                 <label for="latitude">latitude</label>
                 <input
                     id="latitude"
@@ -272,7 +264,6 @@
         margin-bottom: 0.5rem;
     }
     .group input[type='text'],
-    .group input[type='password'],
     .group input[type='number'],
     .group input[type='url'] {
         width: 100%;
